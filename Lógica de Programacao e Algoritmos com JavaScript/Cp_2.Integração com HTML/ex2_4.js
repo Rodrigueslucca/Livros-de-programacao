@@ -4,7 +4,7 @@ const resp = document.querySelector("h3");
 
 //cria um "ouvinte de evento, acionado quando o botão submit for clicado.
 frm.addEventListener("submit", (e)=>{
-    const quilo = Number(frm.inQuilo.value); //obtém conteúdo dos campos.
+    const quilo = Number(frm.inQuilo.value); //obtém conteúdo dos campos.                        
     const consumo = Number(frm.inConsumo.value);
 
     const valor = (quilo / 1000) * consumo //calcula valor a ser pago.
