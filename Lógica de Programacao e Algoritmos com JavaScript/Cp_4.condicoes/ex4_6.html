@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos4_6.css" />
+    <link rel="icon" type="img/png" href="css/capa-ampliada-9786586057904" />
+    <img
+      src="css/caixa-eletronico-isolado-no-fundo-branco_1308-102187.avif"
+      alt="Caixa Eletrônico"
+    />
     <title>Exemplo 4.6</title>
-</head>
-<body>
-    <h1>Programa Caixa Eletônico</h1>
+  </head>
+  <body>
+    <h1>Programa Caixa Eletrônico</h1>
     <form>
-        <p>Valor do Saque R$:
-            <input type="number" id="inValorSaque" placeholder="Digite o valor do saque" required>
-        </p>
-        <input type="submit" value="Exibir Notas para Saques">
+      <p>
+        Valor do Saque R$:
+        <input
+          type="number"
+          id="inSaque"
+          placeholder="Digite o valor do saque"
+          required
+        />
+      </p>
+      <input type="submit" value="Exibir Notas para Saques" />
     </form>
     <h3 id="outNota100"></h3>
     <h3 id="outNota50"></h3>
-    <h3 id="outNota"></h3>
-    
-</body>
+    <h3 id="outNota10"></h3>
+    <script src="js/ex4_6.js"></script>
+  </body>
 </html>
