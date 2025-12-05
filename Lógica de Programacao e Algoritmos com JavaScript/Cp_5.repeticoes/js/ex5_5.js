@@ -3,12 +3,11 @@ const resp1 = document.querySelector("#outResp1")
 const resp2 = document.querySelector("#outResp2")
 
 let resposta = ""  //String com a resposta a ser exibida
-
 let numContas = 0 //Inicializa contador...
 let valTotal = 0 // e acumulador (variáveis globais)
 
 frm.addEventListener("submit", (e)=>{ //"escuta" evento submit do form
-    e.preeventDefault() //evita envio do form
+    e.preventDefault() //evita envio do form
     
 const descricao = frm.inDescricao.value  //obtém dados da conta
 const valor = Number(frm.inValor.value)
