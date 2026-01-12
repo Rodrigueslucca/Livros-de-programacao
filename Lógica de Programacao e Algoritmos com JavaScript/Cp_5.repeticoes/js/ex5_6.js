@@ -7,7 +7,7 @@ frm.addEventListener("submit", (e) => { //"escuta" evento submit do form
     let numDivisores = 0  //declara e inicializa contador
     for(let i = 1; i <= num; i++){ //percorre todos os possíveis divisores de num
         if(num % i == 0){ //verifica se i(1, 2, 3...)é divisor do num
-            numDivisores++ //se é, incrementa contdor
+            numDivisores++ //se é, incrementa contador
          }
         }
         if(numDivisores == 2) { //se possui apenas 2 divisores, é primo
