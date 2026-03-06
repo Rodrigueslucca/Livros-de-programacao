@@ -1,7 +1,7 @@
-const frm = document.getElementById("form");
-const resp = document.getElementById("h3"); 
+const frm = document.querySelector("form");
+const resp = document.querySelector("h3"); 
 
-addEventListener("submit",(e) => {
+frm.addEventListener("submit",(e) => {
     e.preventDefault();
 
     const fruta= frm.fruta.value;
@@ -9,7 +9,7 @@ addEventListener("submit",(e) => {
     let resultado = "";
 
     for(let i =1; i <= numero; i++){
-        resultado += fruta + "*"
+        resultado += fruta + " * "
     }
     resp.innerText = resultado;
 });
